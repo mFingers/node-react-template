@@ -1,0 +1,17 @@
+{
+  "name": "urs-price-recommendation-system",
+  "version": "0.0.1",
+  "description": "United Road price recommendation system",
+  "main": "src/server/index.js",
+  "author": "Michael Falanga",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "node src/server/index.js"
+  },
+  "dependencies": {
+    "hapi": "^17.5.3",
+    "hapi-pino": "^5.0.1",
+    "inert": "^5.1.0"
+  }
+}
