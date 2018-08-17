@@ -1,9 +1,7 @@
 import React from 'react';
 
-export default (name) => {
-  return (
-    <div>
-      Hello, {name}!
-    </div>
-  );
-};
+export default name => (
+  <div>
+    {`Hello, ${name}!`}
+  </div>
+);
