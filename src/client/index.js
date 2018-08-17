@@ -1,13 +1,6 @@
-class Greeter {
-  constructor(name) {
-    this.name = name;
-  }
+import ReactDOM from 'react-dom';
+import greeter from './components/greeter';
 
-  sayHello() {
-    return `Hello, ${this.name}!`;
-  }
-}
+const main = document.getElementsByTagName('main')[0];
 
-const greeter = new Greeter('World');
-
-document.getElementsByTagName('main')[0].innerText = greeter.sayHello();
+ReactDOM.render(greeter('World'), main);
