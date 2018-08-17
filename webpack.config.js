@@ -10,5 +10,15 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.js?$/,
+        resolve: { extensions: ['.js'] },
+        use: { loader: 'babel-loader' },
+      },
+    ],
+  },
+
   devtool: 'source-map',
 };
